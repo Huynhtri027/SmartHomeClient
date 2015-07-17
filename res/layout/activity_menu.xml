@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    tools:context=".indexcontent" 
+    android:background="#ffffff">
+    
+    <TextView
+        android:id="@+id/tx_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/tx_menu"
+        android:textColor="#000000"
+        android:textSize="30sp" />   
+    <ImageButton
+        android:id="@+id/tv"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignLeft="@+id/tx_menu"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/tx_menu"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/machine_tv_tag" />
+    <TextView
+        android:id="@+id/tx_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:layout_alignLeft="@+id/tv"
+        android:layout_alignRight="@+id/tv"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/tv"
+        android:textSize="20sp"  
+        android:text="@string/tx_tv" 
+        android:textColor="#000000"/>
+     <ImageButton
+        android:id="@+id/air"
+        android:layout_width="90dip"
+        android:layout_height="80dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignBottom="@id/tv"
+        android:background="@drawable/machine_air_tag"
+         />
+    <TextView
+        android:id="@+id/tx_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:layout_alignLeft="@+id/air"
+        android:layout_alignRight="@+id/air"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/tv"
+        android:textSize="20sp"  
+        android:text="@string/tx_air" 
+        android:textColor="#000000"/>
+    <!-- <ImageButton
+        android:id="@+id/ib_bangzhu"
+        android:layout_below="@+id/tx_fan"
+        android:layout_marginLeft="50dp" 
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ib_bangzhu"/>
+    
+    <TextView
+        android:id="@+id/tx_bangzhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:layout_alignLeft="@+id/ib_bangzhu"
+        android:layout_alignRight="@+id/ib_bangzhu"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/ib_bangzhu"
+        android:textSize="20sp"  
+        android:text="@string/tx_bangzhu" 
+        android:textColor="#000000"/>
+    
+    <ImageButton
+        android:id="@+id/projector"
+        android:layout_below="@+id/tx_fan"
+        android:layout_toRightOf="@+id/tx_bangzhu"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:background="@drawable/projector"/>
+    
+    <TextView
+        android:id="@+id/tx_tuichu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:layout_alignLeft="@+id/projector"
+        android:layout_alignRight="@+id/projector"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/projector"
+        android:textSize="20sp"  
+        android:text="@string/tx_tuichu" 
+        android:textColor="#000000"/> -->
+    <ImageButton
+        android:id="@+id/fan"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignLeft="@id/tv"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/machine_fan_tag" />
+        
+    <TextView
+        android:id="@+id/tx_fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/fan" 
+        android:layout_alignLeft="@+id/fan"
+        android:layout_alignRight="@+id/fan"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"  
+        android:text="风扇" 
+        android:textColor="#000000"/>
+       
+    <ImageButton
+        android:id="@+id/projector"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignBottom="@id/fan"
+        android:layout_alignRight="@id/air"
+        android:layout_alignTop="@+id/fan"
+        android:layout_toRightOf="@+id/fan"
+        android:layout_alignLeft="@id/air"
+        android:background="@drawable/machine_projector_tag" />
+
+    <TextView
+        android:id="@+id/tx_projector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx_fan"
+        android:layout_alignBottom="@+id/tx_fan"
+        android:layout_alignRight="@+id/projector"
+        android:layout_marginRight="14dp"
+        android:gravity="center_horizontal"
+        android:text="投影仪"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <ImageButton 
+        android:id="@+id/photo"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:layout_alignLeft="@id/tv"
+        android:layout_below="@id/fan"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/machine_photo_tag"/>
+    <TextView
+        android:id="@+id/tx_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/photo" 
+        android:layout_alignLeft="@+id/photo"
+        android:layout_alignRight="@+id/photo"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"  
+        android:text="单反" 
+        android:textColor="#000000"/>
+     <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignBottom="@id/photo"
+        android:layout_alignRight="@id/air"
+        android:layout_alignTop="@+id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:layout_alignLeft="@id/air"
+        android:background="@drawable/ib_exit" />
+      <TextView
+        android:id="@+id/tx_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx_photo"
+        android:layout_alignBottom="@+id/tx_photo"
+        android:layout_alignRight="@+id/exit"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:text="退出"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

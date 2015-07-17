@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    tools:context=".Tv" 
+    android:background="#ffffff">
+
+    <ImageButton 
+        android:id="@+id/dianyuan"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/power_normal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageButton
+        android:id="@+id/tvav"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dianyuan"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/signal_normal" />
+     <ImageButton
+        android:id="@+id/voice"
+        android:layout_width="60dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/dianyuan"
+        android:layout_alignRight="@+id/tvav"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_vol_normal" />
+       <ImageButton
+        android:id="@+id/up_voice"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/dianyuan"
+        android:layout_alignRight="@+id/tvav"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/up_normal" />
+
+      <ImageButton
+          android:id="@+id/down_voice"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+           android:layout_alignBottom="@+id/voice"
+          android:layout_alignLeft="@+id/voice"
+          android:background="@drawable/down_normal" />
+     <ImageButton
+        	android:id="@+id/jiemu"
+        	android:layout_width="60dp"
+        	android:layout_height="160dp"
+        	android:layout_below="@id/dianyuan"
+        	android:layout_alignLeft="@+id/dianyuan"
+        	android:layout_marginTop="15dp"
+        	android:background="@drawable/bg_ch_normal" />
+		 
+
+    <ImageButton
+        android:id="@+id/up_jiemu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/jiemu"
+        android:layout_alignTop="@+id/jiemu"
+        android:background="@drawable/up_normal" />
+
+      <ImageButton
+          android:id="@+id/down_jiemu"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:layout_alignBottom="@+id/jiemu"
+          android:layout_alignLeft="@+id/jiemu"
+          android:background="@drawable/down_normal" />
+
+        <ImageButton
+            android:id="@+id/downok"
+            android:layout_width="160dp"
+            android:layout_height="57dp"
+            android:layout_alignBottom="@+id/voice"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/menu_down_white_normal" />
+
+		 <ImageButton
+		     android:id="@+id/right"
+		     android:layout_width="57dp"
+		     android:layout_height="160dp"
+		     android:layout_alignBottom="@+id/downok"
+		     android:layout_alignRight="@+id/downok"
+		     android:background="@drawable/menu_right_normal" />
+
+		 <ImageButton
+		     android:id="@+id/upok"
+		     android:layout_width="160dp"
+		     android:layout_height="57dp"
+		     android:layout_alignTop="@+id/voice"
+		     android:layout_centerHorizontal="true"
+		     android:background="@drawable/menu_up_normal" />
+
+		 <ImageButton
+		     android:id="@+id/leftok"
+		     android:layout_width="57dp"
+		     android:layout_height="160dp"
+		     android:layout_alignLeft="@+id/downok"
+		     android:layout_alignTop="@+id/upok"
+		     android:background="@drawable/menu_left_white_normal" />
+		 <ImageButton
+		     android:id="@+id/ok"
+		     android:layout_width="70dp"
+		     android:layout_height="70dp"
+		     android:layout_marginTop="125dp"
+		     android:layout_centerHorizontal="true"
+		     android:background="@drawable/menu_ok_normal" />
+		 	 <ImageButton
+		     android:id="@+id/xunhuan"
+		     android:layout_width="60dp"
+		     android:layout_height="60dp"
+		      android:layout_alignLeft="@+id/jiemu"
+		     android:layout_below="@+id/jiemu"
+		     android:layout_marginTop="50dp"
+		     android:background="@drawable/look_back_normal" />
+		 	  <ImageButton
+		     android:id="@+id/xunhuan"
+		     android:layout_width="60dp"
+		     android:layout_height="60dp"
+		     android:layout_centerHorizontal="true"
+		     android:layout_below="@+id/jiemu"
+		     android:layout_marginTop="50dp"
+		     android:background="@drawable/img_smile" />
+		 	   <ImageButton
+		     android:id="@+id/jinyin"
+		     android:layout_width="60dp"
+		     android:layout_height="60dp"
+		      android:layout_alignRight="@+id/voice"
+		     android:layout_below="@+id/jiemu"
+		     android:layout_marginTop="50dp"
+		     android:background="@drawable/mute_normal" />
+		
+</RelativeLayout>

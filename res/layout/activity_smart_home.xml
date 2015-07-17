@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  
+         android:background="#ffffff"
+        android:orientation="vertical" >
+        <TextView
+              android:id="@+id/programname"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/ipeditor_zh"
+              android:layout_alignParentTop="true"
+              android:gravity="center_vertical"
+              android:layout_marginTop="30dp"
+              android:text="数字家庭设备控制系统"
+              android:textColor="#0000ff"
+              android:textSize="25sp" />
+        <TextView
+              android:id="@+id/ip_zh"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_below="@+id/programname"
+              android:layout_marginTop="50dp"
+              android:text="IP   : "
+              android:textColor="#000000"
+              android:textSize="20sp" />
+        <EditText
+              android:id="@+id/ipeditor_zh"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/ip_zh"
+              android:layout_toRightOf="@+id/ip_zh"
+              android:layout_marginRight="10dp"/>
+        <TextView
+              android:id="@+id/port_zh"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/ip_zh"
+              android:layout_marginTop="30dp"
+              android:layout_alignLeft="@+id/ip_zh"
+              android:text="端口:"
+              android:textColor="#000000"
+              android:textSize="18sp" />
+        <EditText
+              android:id="@+id/porteditor_zh"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/port_zh"
+              android:layout_toRightOf="@+id/port_zh"
+              android:layout_marginRight="10dp" />
+        <TextView
+              android:id="@+id/tv_zh"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/port_zh"
+              android:layout_marginTop="30dp"
+              android:layout_alignLeft="@+id/ip_zh"
+              android:text="帐号:"
+              android:textColor="#000000"
+              android:textSize="18sp" />
+        <EditText
+              android:id="@+id/et_zh"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/tv_zh"
+              android:layout_toRightOf="@+id/tv_zh"
+              android:layout_marginRight="10dp"  />
+        <TextView
+              android:id="@+id/tv_mima"
+              android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:layout_below="@+id/tv_zh"
+              android:layout_marginTop="30dp"
+              android:layout_alignLeft="@+id/ip_zh"
+              android:text="密码:"
+              android:textColor="#000000"
+              android:textSize="18sp" />
+        <EditText
+              android:id="@+id/et_mima"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/tv_mima"
+              android:layout_toRightOf="@+id/tv_mima"
+              android:layout_marginRight="10dp"  />
+        <CheckBox
+            android:id="@+id/cb_mima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mima"
+            android:layout_marginLeft="15dip"
+            android:text="记住密码"
+            android:textColor="#000000" />
+        <CheckBox
+            android:id="@+id/cb_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb_mima"
+            android:layout_marginLeft="15dip"
+            android:text="自动登录"
+            android:textColor="#000000" />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_below="@id/cb_auto"
+            android:layout_marginLeft="12dip"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+         <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="12dip"
+            android:gravity="center"
+            android:text="退出"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_alignBottom="@+id/btn_login"
+            android:layout_toRightOf="@+id/btn_login"
+            android:layout_marginRight="10dp"/>
+        
+    
+    </RelativeLayout>
